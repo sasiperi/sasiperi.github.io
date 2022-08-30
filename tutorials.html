@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>sasiperi.io</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #002b36;      
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar">ssadsaasdasda</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">
+         <img src="img/sasiperi-gitgub-card.png" alt="sasi-peri" style="width:42px;height:40px;border:0;" class="img-circle">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="https://sasiperi.github.io/#Presentations">Conferences</a></li>
+        <li><a href="#tutorials">Tutorials</a></li>
+        <li><a href="https://sasiperi.github.io/blog/">Blogs</a></li>        
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Welcome!</h1>
+      <p>I am an Architect by title and engineer at core, who likes to research into new stuff, figure things out . On this site, I wpould share my findings, research into technologies/frameworks, sample-projects & prototypes, presentations.  </p>
+      <hr>
+
+      <h2 id="tutorials">Tutorials</h2>
+      <ul>
+	      <li>
+	      		<a href="#redsp">Crash Course: Distributed Caching with Redis and Spring Boot</a>
+	      		<ul>
+	      		    <li> <a  href="#redsp-abstract"> Abstract</a></li>	      			
+	      			<li> <a  href="#redsp-slides"> Slides</a></li>
+                    <li> <a href="#redsp-video-p1">Part1: Session Overview & API Data on Read & Write</a></li>
+                    <li> <a href="#redsp-video-p1">Part2: How to Set Up Security and Access Control with Redis and Spring Boot? & RedisJSON and RediSearch</a></li>
+                    <li> <a href="#redsp-video-p1">Part3: Redis as Session State Cache for SpringBoot based Web Applications; Cache eviction and Session Cleanup</a></li>
+	      		</ul>
+	      
+	      </li>
+	     
+      </ul>  
+      <br/> 		    
+	    
+	  <!--  ########################################################## S1P - 2019  ############################################# -->
+	  
+      <h3 id="#redsp">Crash Course: Distributed Caching with Redis and Spring Boot</h3>
+      <h4 id="fredsp-abstract">Abstract</h4>  
+      <p>This is a 2.5 hour long, crash course on Distributed caching with Redis and SpringBoot. Course is divided into 3 parts. Part-1 covering various R/W Cache patterns, demonstrate the same with the help of APIs.
+         Part2 deals with security and access controls on the server and client side. It also demonstrates the powerful combination of RedisJSON and RediSearch. 
+         Part3 show cases how Redis can be used as a session state cache, with the help spring-session-data-redis. And concludes with cache eviction patterns and demonstrates session state cleanup activities.
+
+      
+        <br/>
+        <h4 id="#redsp-slides">Slides</h4>
+        Here are the slides used in the above video. Which has the links to references quoted in the video
+        
+       <p align="center"> 
+           <iframe src="docs/DistributedCaching-Redis4SpringBoot-Part1-2-3.pdf" width="1049px" height="590px" frameborder="0"></iframe>
+       </p>
+
+       <h4 id="#redsp-video-p1">Part1: Session Overview & Cache API Data on Read & Write<</h4>
+       <p align="center">
+	       <iframe width="1049" height="590" src="https://youtu.be/I7IM7gG2-rU" 
+	       	title="DistributedCaching-Redis4SpringBoot-Part1-2-3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	       	allowfullscreen></iframe>
+       </p>
+       <h4 id="#redsp-video-p2">Part2: Part2: How to Set Up Security and Access Control with Redis and Spring Boot? & RedisJSON and RediSearch<</h4>
+       <p align="center">
+	       <iframe width="1049" height="590" src="https://youtu.be/sb2AtjSxAjc" 
+	       	title="DistributedCaching-Redis4SpringBoot-Part1-2-3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	       	allowfullscreen></iframe>
+       </p>
+       <h4 id="#redsp-video-p3">Part3: Part3: Redis as Session State Cache for SpringBoot based Web Applications; Cache eviction and Session Cleanup<</h4>
+       <p align="center">
+	       <iframe width="1049" height="590" src="https://youtu.be/I7IM7gG2-rU" 
+	       	title="DistributedCaching-Redis4SpringBoot-Part1-2-3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	       	allowfullscreen></iframe>
+       </p>
+       
+       <br/>
+       
+        
+       
+       <!--  ########################################################## S1P - 2020  ############################################# -->
+       
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>Event-1</p>
+      </div>
+      <div class="well">
+        <p>Event-2</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
